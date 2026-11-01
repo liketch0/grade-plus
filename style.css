@@ -1,0 +1,28 @@
+:root{--navy:#16357e;--navy2:#1f4aa8;--green:#109a69;--ink:#14213d;--muted:#5d6b85;--line:#e1e7f2;--bg:#f6f8fc;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--ink:#e8edf7;--muted:#a9b4c9;--line:#2a3550;--bg:#0f1626;--card:#16203a;--navy:#8fb0ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.9 "Segoe UI",Tahoma,"Noto Kufi Arabic",Arial,sans-serif}
+a{color:var(--navy2)}
+@media (prefers-color-scheme:dark){a{color:#8fb0ff}}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header.top{background:linear-gradient(135deg,#ffffff,#eef4ff 60%,#e8f8f0);border-bottom:1px solid #dfe6f3}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px}
+header.top img{height:48px}
+header.top nav a{color:#16357e;text-decoration:none;font-weight:700;margin-inline-start:16px;font-size:15px}
+.hero{text-align:center;padding:48px 0 24px}
+.hero h1{font-size:clamp(26px,5vw,40px);color:var(--navy);margin:0 0 8px;line-height:1.4}
+.hero p{color:var(--muted);margin:0 auto 18px;max-width:640px}
+.free{display:inline-block;background:linear-gradient(135deg,#ff8a00,#e52e71);color:#fff;font-weight:800;border-radius:999px;padding:6px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:28px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.card h3{margin:0 0 4px;color:var(--navy);font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+h2{color:var(--navy);font-size:24px;margin:40px 0 12px}
+.shots img{width:100%;border-radius:14px;border:1px solid var(--line);margin-bottom:14px;display:block}
+.support{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:#fff7d1;border:1.5px solid #f3d25b;border-radius:18px;padding:16px;color:#5c4300}
+.support img{width:120px;height:120px;background:#fff;border-radius:12px;padding:6px}
+.support a{display:inline-block;background:#ffdd00;color:#16357e;font-weight:800;border-radius:10px;padding:6px 16px;text-decoration:none;margin-top:6px}
+footer{color:var(--muted);font-size:14px;text-align:center;padding:30px 0 40px;border-top:1px solid var(--line);margin-top:40px}
+.policy .card{margin-top:18px}
+.policy h2{font-size:20px;margin:22px 0 6px}
+.en{direction:ltr;text-align:left}
